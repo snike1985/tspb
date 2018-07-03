@@ -1,0 +1,63 @@
+.scroll-content {
+  height: 145px;
+  padding-right: 15px;
+  font-size: 13px;
+  font-family: 'Solomon-Sans-Normal', sans-serif;
+  color: rgb(154, 154, 154);
+  line-height: 1.385;
+
+  &_type2 {
+    height: 170px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: rgb(33, 33, 33);
+    line-height: 1.2;
+  }
+
+  p {
+    margin-bottom: 15px;
+    transition: color .25s ease;
+    &[js-popup]{
+      cursor: pointer;
+      &:hover{
+        color: #212121
+      }
+    }
+
+  }
+
+  strong {
+    font-size: 16px;
+    font-family: 'Solomon-Sans-Bold', sans-serif;
+  }
+
+}
+.nicescroll-rails {
+  width: 6px;
+  border-radius: 3px;
+  background-color: rgba(226, 226, 226, 0.4);
+}
+.nicescroll-cursors {
+  width: 6px;
+  border-radius: 3px;
+}
+@media (min-width: $phone-landscape) {
+  .scroll-content {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .scroll-content {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .scroll-content {
+
+  }
+}
+@media (min-width: $desktop) {
+  .scroll-content {
+
+  }
+}

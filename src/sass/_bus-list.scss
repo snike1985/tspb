@@ -1,0 +1,46 @@
+.bus-list {
+
+  ul {
+    padding: 3px 0;
+    color: rgb(154, 154, 154);
+    font-size: 13px;
+    line-height: 1.9;
+
+    li {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      a,
+      a:visited {
+        color: rgb(33, 33, 33);
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $phone-landscape) {
+  .bus-list {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .bus-list {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .bus-list {
+
+  }
+}
+@media (min-width: $desktop) {
+  .bus-list {
+
+  }
+}
+

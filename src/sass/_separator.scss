@@ -1,0 +1,44 @@
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-color: #dfdfdf;
+  border-width: 0 1px;
+  border-style: solid;
+  transition: background $duration $easing;
+
+  svg,
+  img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: #fe4535;
+  }
+}
+@media (min-width: $phone-landscape) {
+  .separator {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .separator {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .separator {
+
+  }
+}
+@media (min-width: $desktop) {
+  .separator {
+
+  }
+}
+

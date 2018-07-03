@@ -1,0 +1,87 @@
+.icon-link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: rgb(154, 154, 154);
+  transition: color $duration $easing;
+
+  &.inline {
+    display: inline-flex;
+  }
+
+  &_black {
+    color: rgb(33, 33, 33);
+  }
+
+  &_small {
+    font-size: 14px;
+  }
+
+  &_border {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &_cabinet {
+
+    svg {
+      fill: rgb(254, 69, 53);
+      transition: fill $duration $easing;
+    }
+
+    &:hover {
+
+      svg {
+        fill: #212121;
+      }
+    }
+  }
+
+  i {
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+    color: #212121; // svg would take as currentColor
+    transition: $duration $easing;
+    img,
+    svg {
+      // or fill: #333 if color is not taking from parent
+      display: block;
+      width: 20px;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  &:hover {
+    color: #fe4535;
+    i {
+      color: #fe4535;
+    }
+  }
+}
+@media (min-width: $phone-landscape) {
+  .icon-link {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .icon-link {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .icon-link {
+
+  }
+}
+@media (min-width: $desktop) {
+  .icon-link {
+
+  }
+}

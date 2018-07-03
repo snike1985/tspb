@@ -1,0 +1,169 @@
+.sidebar {
+  padding: 25px 0 5px;
+  font-size: 13px;
+  color: rgb(65, 65, 65);
+  line-height: 1;
+
+  &__item {
+    display: block;
+    padding: 10px 10px 10px 0;
+    color: rgb(65, 65, 65);
+    transition: color $duration $easing, background $duration $easing;
+
+    &-title {
+      display: flex;
+      align-items: center;
+    }
+
+    &.selected {
+      color: rgb(33, 33, 33);
+
+      .sidebar__icon {
+
+        svg {
+          fill: rgb(33, 33, 33);
+        }
+      }
+    }
+
+    &.active {
+      color: rgb(254, 69, 53);
+
+      .sidebar__icon {
+
+        svg {
+          fill: rgb(254, 69, 53);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 10px 0 0;
+
+    svg {
+      width: 17px;
+      height: 17px;
+      fill: rgb(176, 176, 176);
+    }
+  }
+}
+@media (min-width: $phone-landscape) {
+  .sidebar {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .sidebar {
+    position: fixed;
+    top: 92px;
+    left: 0;
+    width: 110px;
+    padding: 13px 0;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    color: rgb(65, 65, 65);
+    line-height: 1;
+    text-align: center;
+
+    &_clone {
+
+      .sidebar__item {
+
+        > .submenu {
+          display: block;
+          position: fixed;
+          left: 110px;
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        &.hover {
+
+          > .submenu {
+            opacity:1;
+            pointer-events: fill;
+          }
+        }
+      }
+    }
+
+    &__item {
+      display: block;
+      position: relative;
+      padding: 13px;
+      color: rgb(65, 65, 65);
+      transition: color $duration $easing, background $duration $easing;
+
+      > .submenu {
+        display: none;
+      }
+
+      &.selected {
+        color: rgb(33, 33, 33);
+
+        .sidebar__icon {
+
+          svg {
+            fill: rgb(33, 33, 33);
+          }
+        }
+      }
+
+      &.active {
+        color: rgb(254, 69, 53);
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 4px;
+          height: 100%;
+          background-color: rgb(254, 69, 53);
+          content: '';
+        }
+
+        .sidebar__icon {
+
+          svg {
+            fill: rgb(254, 69, 53);
+          }
+        }
+      }
+
+      &.hover {
+        background-color: #fe4535;
+        color: #fff;
+
+        .sidebar__icon {
+
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+    }
+
+    &__icon {
+      margin: 0 0 3px 0;
+
+      svg {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .sidebar {
+
+  }
+}
+@media (min-width: $desktop) {
+  .sidebar {
+
+  }
+}
